@@ -1,10 +1,29 @@
 @import "tailwindcss";
 
-html {
-  scroll-behavior: smooth;
+@theme {
+  --color-ocean: #0B3C5D;
+  --color-ocean-deep: #072B44;
+  --color-ocean-mid: #0F4A70;
+  --color-sand: #F4E9D8;
+  --color-sand-light: #FBF6EC;
+  --color-sand-dark: #E6D7BD;
+  --color-coral: #F26B5B;
+  --color-coral-dark: #B8402F;
+  --color-coral-tint: #FDE3DF;
+  --color-coral-ink: #7A2418;
+  --color-muted: #3F5B70;
+  --color-field: #5A7488;
+
+  --font-display: var(--font-bricolage), system-ui, sans-serif;
+  --font-sans: var(--font-figtree), system-ui, sans-serif;
 }
 
-body {
-  background-color: #F4E9D8;
-  color: #0B3C5D;
+@layer base {
+  body {
+    @apply bg-sand font-sans text-lg leading-[1.55] text-ocean;
+  }
+  :focus-visible {
+    outline: 3px solid #F26B5B;
+    outline-offset: 3px;
+  }
 }

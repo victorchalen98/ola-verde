@@ -7,7 +7,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-surface0/80 bg-mantle/90 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-sand-dark/80 bg-sand-light/90 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#">
             <span className="font-bold">Ola Verde</span> <br /> 
